@@ -1,0 +1,93 @@
+.car{
+    font-weight: 600;
+    color: var(--label-color);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+   line-height: 22px;
+    display: flex;
+}
+.input_car{
+    width: 280px;
+    height: 35px;
+    margin-left: 46px;
+}
+#soloai{
+    width: 280px;
+    height: 35px;
+    margin-left: 76px;
+}
+#trucxe{
+    width: 280px;
+    height: 35px;
+    margin-left: 38px;
+}
+#name_car{
+    width: 280px;
+    height: 35px;
+    margin-left: 28px;
+}
+#plate_number{
+  background-color: white;
+    width: 278px;
+    height: 35px;
+    margin-left: 42px;
+    border: 2px solid white;
+    line-height: 33px ;
+    padding-left: 82px;
+
+    
+}
+.type_car{
+    width: 280px;
+    height: 35px;
+    margin-left: 80px;
+}
+#typecar {
+    width: 280px;
+    height: 35px;
+    margin-left: 78px;
+  }
+  #somay{
+    width: 280px;
+    height: 35px;
+    margin-left: 204px;
+  }
+  
+  #person{
+    width: 280px;
+    height: 35px;
+    margin-left: 8px;
+    text-align: center;
+  }
+  #tlbt{
+    width: 280px;
+    height: 35px;
+    margin-left: 38px;
+  }
+  #year{
+    width: 280px;
+    height: 35px;
+    margin-left: 136px;
+  }
+  #weight_before{
+    width: 280px;
+    height: 35px;
+    margin-left: 108px;
+  }
+  #namecar{
+    width: 280px;
+    height: 35px;
+    margin-left: 178px;
+  }
+ #cdcs{
+    width: 280px;
+    height: 35px;
+    margin-left: 110px;
+  }
+  #sokhung{
+    width: 280px;
+    height: 35px;
+    margin-left: 52px;
+  }
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vehicle_registration.css">
+    <link rel="stylesheet" href="weight_status.css">
+    <link rel="stylesheet" href="information_car.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet"  href="asas.css">
+    <link rel="stylesheet" href="./front/fontawesome-free-6.1.2-web/css/all.min.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body onload="startTime()" >
+    <div class="header_1">
+        <div class="header-navbar">
+            <div class="logo">
+                <img src="./picture/ITS.png" alt="">
+            </div>
+            <div class="header-navbar-1">
+                SỞ GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ MINH 
+                TRUNG TÂM QUẢN LÝ GIAO THÔNG  ĐÔ THỊ
+                 
+            </div>
+            
+            <div class="header-navbar-2">
+                     PHẦN MỀM KIỂM SOÁT CÂN TẢI TRỌNG XE 
+            </div>
+            
+        </div>
+        <header>
+            <a href="weight_status.html" class="logo"><i class="fa-solid fa-car"></i><span></span></a>
+    
+            <ul class="navbar">
+                <li><a  href="vehicle_registration.html" >Đăng kí xe</a></li>
+                <li><a href="weight_status.html"class="active">Thông tin cân</a></li>
+                <li><a href="history.html">Lịch sử</a></li>
+            
+            </ul>
+    
+    
+        </header>
+  <div class="container-frame">
+    <div class="background">
+        <div class="navbar-thongtin">
+            <h3 class="navbar-thongtin-label">
+                <i class="navbar-thongtin-label-icon fas fa-list"></i>
+                 Thông tin cân
+            </h3>
+        </div>
+        <div class="khung">
+
+            <div class="khung-anh-tab2">
+                <div class="camera-realtime">
+                    Camera Realtime
+                </div>
+                
+                <div class="webcam1">
+
+                    <video id="webcam_real" ></video>
+                    <canvas id="canvas" ></canvas>
+                    
+                </div>
+                   
+            </div>   
+            <div class="khung-thong-tin-tab2">
+                <form action="https://httpbin.org/anything" method="get">
+                    <div class="frame-left">
+                        
+                        <div class="car">
+                            <label class="car" for="input_car">Biển số xe:</label><br>
+                            <output id="plate_number" name="input_car" type="text" value="" ><br>
+                        </div>
+                        <div class="car">
+    
+                            <label class="car " for="input_car">Tên lái xe :</label><br>
+                            <input id="tenlx" name="input_car" type="text" value="" ><br>
+                        </div>
+    
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Ngày cân :</label><br>
+                            <output id="ngayc" name="input_car" type="text" value="" ><br>
+                                <!-- <input id="txddddt" name="input_car" type="text" value="" ><br> -->
+                        </div>
+    
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Giờ xe vào :</label><br>
+                            <output id="txt" name="input_car" type="text" value="" ><br>
+                                <!-- <input id="txtfff" name="input_car" type="text" value="" ><br> -->
+                        </div>
+                        
+                    </div>
+                    <div class="frame-right">
+                        <div class="car">
+                            <label class="car " for="input_car">Trọng lượng bản thân:</label><br>
+                            <output id="tbbt" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car">Trọng lượng xe khi cân  :</label><br>
+                            <input id="tlkc" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car" >Trọng lượng hàng:</label><br>
+                            <input id="tlhh" name="input_car" type="text" value=""><br>
+                            
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car">Xe vượt tải trọng:</label><br>
+                            <input id="vtt" name="input_car" type="text" value=""><br>
+                        </div>
+                     
+                    </div>
+                </form>   
+                <div class="function-tab2">
+                    
+                    <div class="snap-tab2" download onclick="takeAPicture()">SNAP</div>
+                    <button id="insert-tab2" role="button">Up Load</button>
+
+                </div>     
+            </div>
+
+        </div>
+
+
+</div>
+</div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+<script src="weight_status.js"></script>
+
+   
+</body>
+</html> 
