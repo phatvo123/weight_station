@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vehicle_registration.css">
+    <link rel="stylesheet"  href="history.css">
+    <link rel="stylesheet" href="./front/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script scr="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="printPDF.css">
+
+    <title>Document</title>
+    <script>
+        function printContent(el){
+            var restorepage = document.body.innerHTML;
+            var printcontent = document.getElementById(el).innerHTML;
+            document.body.innerHTML = printcontent;
+            window.print();
+            document.body.innerHTML = restorepage;
+        }
+        </script>
+</head>
+<body >
+    <div class="header_1">
+        <div class="header-navbar">
+            <div class="logo">
+                <img src="./picture/ITS.png" alt="">
+            </div>
+            <div class="header-navbar-1">
+                SỞ GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ MINH 
+                TRUNG TÂM QUẢN LÝ GIAO THÔNG  ĐÔ THỊ
+                 
+            </div>
+            
+            <div class="header-navbar-2">
+                     PHẦN MỀM KIỂM SOÁT CÂN TẢI TRỌNG XE 
+            </div>
+            
+        </div>
+        <header>
+            <a href="weight_status.html" class="logo"><i class="fa-solid fa-car"></i><span></span></a>
+    
+            <ul class="navbar">
+                <li><a href="vehicle_registration.html" >Đăng kí xe</a></li>
+                <li><a href="weight_status.html">Thông tin cân</a></li>
+                <li><a href="history.html">Lịch sử</a></li>
+                <li><a href="printPDF.html"class="active">In file</a></li>
+            
+            </ul>
+    
+    
+        </header>
+
+
+
+<div class="container-frame">
+
+        <div class="navbar-thongtin-tab4">
+            <h3 class="navbar-thongtin-label">
+                <i class="navbar-thongtin-label-icon fa-solid fa-print"></i>
+                 Print PDF
+            </h3>
+        </div>
+        <div class="command">
+             Tìm kiếm : <input type="text" id="plate_number"></input>
+            <button id="select">SELECT</button>
+            <button id="print" onclick="printContent('pdf')">Print Content</button>
+        </div>
+        
+    <div id="pdf">
+        <div class="header_pdf">
+            <div class="header_5">Sở Giao Thông Vận Tải Hồ Chí Minh</div>
+            <div class="header_2">Trạm cân Cát Lái </div>
+            <div class="header_3">Phiếu cân kiểm tra xe quá tải </div>
+            <div class="header_4">Hình thức : Kiểm tra khối lượng hành hoá chuyên chở cho phép TGGT ghi trong Giấy chứng nhận KĐ ATKT&BVMT PTGT CGĐB</div>
+            
+        </div>
+        <div class="content">
+            <div id="information">
+                Biển số xe : <output type="text" id="bsx"></output> <br><br>
+                Loại xe : <output type="text" id="lx"></output> <br><br>
+                Họ tên lái xe: <output type="text" id="ten"></output> <br><br>
+                Giấy phép lái xe : <output type="text" id="gplx"></output> <br><br>
+            
+                Chủ xe: <output type="text" id="chu_xe"></output> <br><br>
+                Số trục xe:  <output type="text" id="so_xe"></output> <br><br>
+                Thời gian xe vào : <output type="text" id="tg"></output> <br><br>
+               Ngày cân : <output type="text" id="date"></output> <br><br>
+            </div>
+            <div id="image">
+                <img id="myimg" src="" >
+            </div>
+        
+        </div>
+ 
+        <div class="weight_car">
+    
+        Tổng trọng lượng của xe( đã trừ sai số ):  <output type="text" id="ttlx"></output>
+        (kg) <br><br>
+        Tổng trọng lượng bản thân của xe :  <output type="text" id="tlbt"></output>
+        (kg) <br><br>
+        Trọng lượng HHCC cho phép TGGT : <output type="text" id="tlhh"></output>
+        (kg) <br><br>
+        Vượt quá trọng lượng HHCC cho phép TGGT : <output type="text" id="vtt"></output>
+        (kg)<br><br>
+        <label class="kl " for="input_car" >Kết luận : Xe chở vượt quá tải trọng thiết kế :</label>
+        <output id="kq" name="" type="text" value=""  >
+            %<br>
+        </div>
+        <div class="comfim">
+            <div id="sign_owner">
+                <div class="title_owner">Người lái xe (người đại diện)</div>
+                <div class="title_owner_1">(Kí ghi rõ họ tên)</div>
+            </div>
+            <div id="sign_authority">
+                <div class="title_authority">Người lập phiếu</div>
+                <div class="title_authority_1">(Kí ghi rõ họ tên)</div>
+            </div>
+    
+        </div>
+    
+    
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+   <script src="printPDF.js"></script>
+
+</body>
+
+</html>

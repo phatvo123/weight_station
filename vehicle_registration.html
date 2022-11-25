@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vehicle_registration.css">
+    <link rel="stylesheet" href="weight_status.css">
+    <link rel="stylesheet" href="information_car.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./front/fontawesome-free-6.1.2-web/css/all.min.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body >
+    <div class="header_1">
+        <div class="header-navbar">
+            <div class="logo">
+                <img src="./picture/ITS.png" alt="">
+            </div>
+            <div class="header-navbar-1">
+                SỞ GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ MINH 
+                TRUNG TÂM QUẢN LÝ GIAO THÔNG  ĐÔ THỊ
+                 
+            </div>
+            
+            <div class="header-navbar-2">
+                     PHẦN MỀM KIỂM SOÁT CÂN TẢI TRỌNG XE 
+            </div>
+            
+        </div>
+        <header>
+            <a href="weight_status.html" class="logo"><i class="fa-solid fa-car"></i><span></span></a>
+    
+            <ul class="navbar">
+                <li><a  href="vehicle_registration.html" class="active">Đăng kí xe</a></li>
+                <li><a href="weight_status.html">Thông tin cân</a></li>
+                <li><a href="history.html">Lịch sử</a></li>
+                <li><a href="printPDF.html">In file</a></li>
+            
+            </ul>
+    
+    
+        </header>
+
+
+
+
+  <div class="container-frame">
+    <div class="background">
+        <div class="navbar-thongtin">
+            <h3 class="navbar-thongtin-label">
+                <i class="navbar-thongtin-label-icon fa-solid fa-circle-info"></i>
+                 Đăng ký thông tin xe
+
+            </h3>
+         
+            
+        </div>
+        <div class="khung">
+
+            <div class="khung-anh">
+                <div class="camera-realtime">
+                    Camera Realtime
+                </div>
+                
+                <div class="webcam1">
+
+                    <video id="webcam_real" ></video>
+                    <canvas id="canvas" ></canvas>
+                    
+                </div>
+                   
+            </div>     
+            <div class="khung-thong-tin">
+                <form action="https://httpbin.org/anything" method="get">
+                    <div class="frame-left">
+                       
+                        <div class="car">
+                            <label class="car" for="input_car">Biển số xe:</label><br>
+                            <output id="plate_number" name="input_car" type="text" value="" ><br>
+                        </div>
+                        <div class="car">
+    
+                            <label class="car " for="input_car">Tên chủ xe :</label><br>
+                            <input id="name_owner" name="input_car" type="text" value="" ><br>
+                        </div>
+    
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Số trục xe :</label><br>
+                            <input id="trucxe" name="input_car" type="text" value=""><br>
+                        </div>
+    
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Số loại :</label><br>
+                            <input id="soloai" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Số khung:</label><br>
+                            <input id="sokhung" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Niên hạn sử dụng:</label><br>
+                            <select id="tgsd">                                     
+                                    <option>20 năm</option>
+                                    <option>24 năm</option>
+                                    <option>Không niên hạn </option>
+                            </select>
+                        </div>
+                       
+    
+                        <div class="car">
+    
+                            <label class="car " for="input_car" >Loại xe:</label><br>
+                            <select id="typecar">                                     
+                                    <option>Xe thân liền </option>
+                                    <option>Xe container</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="frame-right">
+                        <div class="car">
+                            <label class="car " for="input_car">Trọng lượng bản thân:</label><br>
+                            <input id="tlbt" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car" >Trọng lượng hàng hoá :</label><br>
+                            <input id="trong_luong_hh" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car">Số người cho phép chở :</label><br>
+                            <select id="person">                                     
+                                <option>1 </option>
+                                <option>2</option>
+                                <option>3</option>
+                        </select>
+                        </div>
+
+                        <div class="car">
+                            <label class="car " for="input_car">Chiều dài cơ sở:</label><br>
+                            <input id="cdcs" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car" >Năm sản xuất:</label><br>
+                            <select id="year">   
+                                <option> Year</option>                                  
+                                <option> 2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                
+                        </select>
+                        </div>
+                     
+                        <div class="car">
+                            <label class="car_1 " for="input_car">Số máy :</label><br>
+                            <input id="somay" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car">Nhãn hiệu:</label><br>
+                            <input id="namecar" name="input_car" type="text" value=""><br>
+                            <!-- <button onclick="calculate()">Click me</button> -->
+                        </div>
+                    </div>
+                </form>   
+                     <div class="function">
+                        
+                    <div class="snap" download onclick="takeAPicture()">SNAP</div>
+                    <button id="insert" role="button">Up Load</button>
+                    <!-- <div class="insert" >Up Load</div> -->
+                    
+                     </div>     
+            </div>
+
+        
+
+
+</div>
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+<script src="vehicle_registration.js"></script>
+
+</body>
+</html> 
