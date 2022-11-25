@@ -7,7 +7,6 @@ var picture ;
 function takeAPicture(){
     picture = webcam.snap();
     document.querySelector('a').src = picture;
-
    
 }   
 
@@ -44,63 +43,106 @@ function startTime() {
   document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
   document.getElementById('ngayc').innerHTML =today.toLocaleDateString();
   setTimeout(startTime, 1000);
+
+
 }
 
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-var  a,bsx, tenlx, ngay,gio,tlbt,tlkc,tlhh,vtt;
+var  a,bsx, tenlx, ngay,gio,tlbt,tlkc,tlhh,vtt,trong_luong_hh_tab2;
 function Ready(){
 
   bsx = document.getElementById('plate_number').value;
   tenlx = document.getElementById('tenlx').value;
+  gplx = document.getElementById('gplx').value;
   ngay = document.getElementById('ngayc').value;
   gio = document.getElementById('txt').value;
+  trong_luong_hh= document.getElementById('trong_luong_hh_tab2').value;
   tlbt = document.getElementById('tbbt').value;
   tlkc = document.getElementById('tlkc').value;
-  tlhh = document.getElementById('tlhh').value;
+  trong_luong_nguoi = document.getElementById('tln').value;
   vtt = document.getElementById('vtt').value;
+  phan_tram = document.getElementById('phan_tram').value;
 
+}
+
+
+  var tlkc = document.getElementById('tlkc');
+  var dbRef = firebase.database().ref().child('kl');
+  dbRef.on('value', snap => tlkc.innerText = snap.val());
+
+  var plate_number = document.getElementById('plate_number');
+  var dbRef = firebase.database().ref().child('hihi');
+  dbRef.on('value', snap => plate_number.innerText = snap.val());
+
+//------------------- insert
+document.getElementById("calc").onclick = function(){
+  Ready();
+  firebase.database().ref('Thong_tin_xe/'+bsx).on('value',function(snapshot){
+
+      document.getElementById('tbbt').value=snapshot.val().Trong_luong_ban_than;
+      document.getElementById('trong_luong_hh_tab2').value=snapshot.val().Trong_luong_hang_hoa;
+      var so_luong =snapshot.val().So_luong_nguoi;
+      var kl_nguoi = so_luong*1000;
+      document.getElementById('tln').value=kl_nguoi;
+      var trong_luong_hh = document.getElementById('trong_luong_hh_tab2').value
+      var trong_luong_bt = document.getElementById('tbbt').value
+      var trong_luong_can = document.getElementById('tlkc').value
+      var trong_luong_nguoi= document.getElementById('tln').value
+  
+      var kq = (trong_luong_can-trong_luong_hh-trong_luong_nguoi-trong_luong_bt)
+      var phan_tram = (kq/(trong_luong_hh*100))*10000
+      document.getElementById('vtt').value =kq;  
+      document.getElementById('phan_tram').value =phan_tram;
+
+  });
   
 
 }
-  
 
-var plate_number = document.getElementById('plate_number');
-var dbRef = firebase.database().ref().child('hihi');
-dbRef.on('value', snap => plate_number.innerText = snap.val());
-
-var tbbt = document.getElementById('tbbt');
-var dbRef = firebase.database().ref().child('kaka');
-dbRef.on('value', snap => tbbt.innerText = snap.val());
-
-
-//------------------- insert
 document.getElementById('insert-tab2').onclick = async () => {
   Ready();
- 
 
-  
   var storageRef = firebase.storage().ref('Images/'+Date.now().toString()+".png");
   var task = await storageRef.putString(picture?.replace('data:image/png;base64,', ''), 'base64', {
       contentType: 'image/jpeg'
   })
   const picture_url = await task.ref.getDownloadURL()
-  firebase.database().ref('Pictures/').set({
-    Link:picture_url,
-  })
+
   firebase.database().ref('Trang_thai_can/').push({
    Anh:picture_url,
    Bien_so_xe:bsx,
    Ten_lai_xe:tenlx,
+   GPLX:gplx,
    Ngay_can: ngay,
    Gio_vao:gio,
-   Trong_luong_ban_than:tlbt, 
+   Trong_luong_hang_hoa:trong_luong_hh, 
+   Trong_luong_ban_than:tlbt,
    Trong_luong_khi_can:tlkc,
-   Trong_luong_hang:tlhh,
-   Xe_vuot_tai_trong:vtt
+   Trong_luong_nguoi:tln,
+   Xe_vuot_tai_trong:vtt,
+   Phan_tram_vtt:phan_tram
 
+  })
+
+  firebase.database().ref('Pictures/').set({
+    Link:picture_url,
+  })
+  firebase.database().ref('PDF/').set({
+    Anh:picture_url,
+    Bien_so_xe:bsx,
+    Ten_lai_xe:tenlx,
+    GPLX:gplx,
+    Ngay_can: ngay,
+    Gio_vao:gio,
+    Trong_luong_hang_hoa:trong_luong_hh, 
+    Trong_luong_ban_than:tlbt,
+    Trong_luong_khi_can:tlkc,
+    Trong_luong_nguoi:tln,
+    Xe_vuot_tai_trong:vtt,
+    Phan_tram_vtt:phan_tram
   })
  
 }

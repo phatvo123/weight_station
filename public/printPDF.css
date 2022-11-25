@@ -1,0 +1,201 @@
+#pdf{
+    width: 100%;
+    height: 900px;
+   
+}
+.header{
+    margin-left: 50px;
+    
+}
+.navbar-thongtin-tab4{
+  width: 100%;
+  height: 45px;
+  background-color: rgb(11, 185, 180);
+  display: flex; /*can giua */
+  align-items: center;
+  border-radius: 10px 10px 0px 0px ;
+  
+
+}
+#plate_number{
+  margin-top: 14px;
+}
+.header_2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.header_5{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.header_3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.header_4{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+img{ 
+    height: 250px; 
+    width: 250px; 
+    
+}
+.content{
+   margin-top: 30px;
+   height: 330px;
+   
+}
+#information{
+   width: 40%;
+   float: left;
+   overflow: auto;
+   margin-left: 50px;
+   font-size: 18px
+}
+#image{
+width: 40%;
+float: right;
+overflow: auto;
+margin-right: 10px;
+}
+
+#namebox_1{
+width: 150px;
+}
+#rollbox_1{
+    width: 150px;
+}
+.secbox_1{
+    width: 150px;
+}
+.kl{
+    font-weight: 600;
+}
+.weight_car{
+    margin: 2px 50px ;
+    font-size: 18px
+    
+}
+
+.comfim{
+  margin-top: 36px;
+}
+#sign_owner{
+    width: 40%;
+    float: left;
+    overflow: auto;
+    margin-left: 50px;
+ }
+ #sign_authority{
+ width: 40%;
+ float: right;
+ overflow: auto;
+ margin-right: 10px;
+ }
+ .title_owner{
+font-size: 20px;
+font-weight: 600;
+text-align: center;
+ }
+ .title_owner_1{
+    font-style: italic;
+    text-align: center;
+ }
+ .title_authority{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+ }
+ .title_authority_1{
+    font-style: italic;
+    text-align: center;
+ }
+ .command{
+  height: 60px;
+  width: 100%;
+  background-color: #b6c3be;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 0px 0px 10px 10px;
+    
+ }
+ 
+ #select{
+    position: absolute;
+    right:428px;
+    background: linear-gradient(to bottom right, #d216a3, #05848f);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0px 42px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+  .print{
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;   
+  }
+ .print:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  } 
+  .print:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  #print{
+    position: absolute;
+    right:124px;
+    background: linear-gradient(to bottom right, #149e6e, #bd9916);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0px 42px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+  .print{
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;   
+  }
+ .print:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  } 
+  .print:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }

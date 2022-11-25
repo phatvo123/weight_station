@@ -5,12 +5,6 @@
 *{
     box-sizing: inherit;
 }
-/* html{
-    font-size: 62.5%;
-    line-height:1.6rem;
-    font-family: 'Roboto Serif', serif;
-    box-sizing: border-box;
-} */
 
 body{
     height: 1300px;
@@ -21,6 +15,104 @@ body{
     background-image: linear-gradient(0, #09bdc4,#1476bc); 
 
 }
+.car{
+    font-weight: 600;
+    color: var(--label-color);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+   line-height: 22px;
+    display: flex;
+}
+#name_owner{
+    width: 280px;
+    height: 35px;
+    margin-left: 28px;
+}
+#soloai{
+    width: 280px;
+    height: 35px;
+    margin-left: 76px;
+}
+#trucxe{
+    width: 280px;
+    height: 35px;
+    margin-left: 38px;
+}
+#name_car{
+    width: 280px;
+    height: 35px;
+    margin-left: 28px;
+}
+#plate_number{
+  background-color: white;
+    width: 278px;
+    height: 35px;
+    margin-left: 42px;
+    border: 2px solid white;
+    line-height: 33px ;
+    padding-left: 82px;
+}
+#tgsd{
+  width: 220px;
+  height: 35px;
+  margin-left: 12px;
+}
+
+#trong_luong_hh{
+    width: 280px;
+    height: 35px;
+    margin-left: 24px;
+}
+#typecar {
+    width: 280px;
+    height: 35px;
+    margin-left: 78px;
+  }
+  #somay{
+    width: 280px;
+    height: 35px;
+    margin-left: 204px;
+  }
+  
+  #person{
+    width: 280px;
+    height: 35px;
+    margin-left: 8px;
+    text-align: center;
+  }
+  #tlbt{
+    width: 280px;
+    height: 35px;
+    margin-left: 38px;
+  }
+  #year{
+    width: 280px;
+    height: 35px;
+    margin-left: 136px;
+  }
+  #weight_before{
+    width: 280px;
+    height: 35px;
+    margin-left: 108px;
+  }
+  #namecar{
+    width: 280px;
+    height: 35px;
+    margin-left: 178px;
+  }
+ #cdcs{
+    width: 280px;
+    height: 35px;
+    margin-left: 110px;
+  }
+  #sokhung{
+    width: 280px;
+    height: 35px;
+    margin-left: 52px;
+  }
+
+
 .container-frame{
     width: 95%;
     height: 800px;
@@ -198,8 +290,8 @@ img{
 }
 .frame-right{
     float: left;
-    margin-left: 80px;
-    margin: 30px 20px 20px 100px;  
+
+    margin: 30px 20px 20px 50px;  
 }
 .camera{
     color: aquamarine;
@@ -362,7 +454,7 @@ img{
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
   }
 
-  .insert {
+  #insert {
     position: absolute;
     right:298px;
     background: linear-gradient(to bottom right, #cd0e64, #9f26eb);

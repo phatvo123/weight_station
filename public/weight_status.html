@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vehicle_registration.css">
     <link rel="stylesheet" href="weight_status.css">
-    <link rel="stylesheet" href="information_car.css">
-    <link rel="stylesheet" href="reponsive.css">
-    <link rel="stylesheet"  href="asas.css">
+    <link rel="stylesheet"  href="header.css">
     <link rel="stylesheet" href="./front/fontawesome-free-6.1.2-web/css/all.min.css">
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
@@ -43,6 +41,7 @@
                 <li><a  href="vehicle_registration.html" >Đăng kí xe</a></li>
                 <li><a href="weight_status.html"class="active">Thông tin cân</a></li>
                 <li><a href="history.html">Lịch sử</a></li>
+                <li><a href="printPDF.html">In file</a></li>
             
             </ul>
     
@@ -74,30 +73,38 @@
             <div class="khung-thong-tin-tab2">
                 <form action="https://httpbin.org/anything" method="get">
                     <div class="frame-left">
-                        
                         <div class="car">
                             <label class="car" for="input_car">Biển số xe:</label><br>
-                            <output id="plate_number" name="input_car" type="text" value="" ><br>
+                            <output id="plate_number" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
     
                             <label class="car " for="input_car">Tên lái xe :</label><br>
                             <input id="tenlx" name="input_car" type="text" value="" ><br>
                         </div>
-    
                         <div class="car">
     
+                            <label class="car " for="input_car">GPLX :</label><br>
+                            <input id="gplx" name="input_car" type="text" value="" ><br>
+                        </div>
+                        <div class="car">
                             <label class="car " for="input_car" >Ngày cân :</label><br>
                             <output id="ngayc" name="input_car" type="text" value="" ><br>
                                 <!-- <input id="txddddt" name="input_car" type="text" value="" ><br> -->
                         </div>
-    
                         <div class="car">
     
                             <label class="car " for="input_car" >Giờ xe vào :</label><br>
                             <output id="txt" name="input_car" type="text" value="" ><br>
                                 <!-- <input id="txtfff" name="input_car" type="text" value="" ><br> -->
                         </div>
+                        <div class="car">
+    
+                            <label class="car " for="input_car">Trọng lượng HH :</label><br>
+                            <output id="trong_luong_hh_tab2" name="input_car" type="text" value="" ><br>
+                        </div>
+                        
+                        
                         
                     </div>
                     <div class="frame-right">
@@ -107,24 +114,32 @@
                         </div>
                         <div class="car">
                             <label class="car " for="input_car">Trọng lượng xe khi cân  :</label><br>
-                            <input id="tlkc" name="input_car" type="text" value=""><br>
+                            <output id="tlkc" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
-                            <label class="car " for="input_car" >Trọng lượng hàng:</label><br>
-                            <input id="tlhh" name="input_car" type="text" value=""><br>
+                            <label class="car " for="input_car" >Trọng lượng người:</label><br>
+                            <output id="tln" name="input_car" type="text" value=""><br>
                             
                         </div>
                         <div class="car">
                             <label class="car " for="input_car">Xe vượt tải trọng:</label><br>
-                            <input id="vtt" name="input_car" type="text" value=""><br>
+                            <output id="vtt" name="input_car" type="text" value=""><br>
+                        </div>
+                        <div class="car">
+                            <label class="car " for="input_car">Phần trăm VTT</label><br>
+                            <output id="phan_tram" name="input_car" type="text" value=""><br>
                         </div>
                      
                     </div>
                 </form>   
                 <div class="function-tab2">
                     
-                    <div class="snap-tab2" download onclick="takeAPicture()">SNAP</div>
+                    <div id="snap-tab2" download onclick="takeAPicture()">SNAP</div>
+                    <!-- <div id="result-tab2" download onclick="result()">result</div> -->
                     <button id="insert-tab2" role="button">Up Load</button>
+                    <button id="calc" role="button">Xuất dữ liệu </button>
+                    
+                    
 
                 </div>     
             </div>
