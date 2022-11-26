@@ -1,0 +1,248 @@
+#tenlx{
+    width: 280px;
+    height: 35px;
+    margin-left: 44px;
+}
+#trong_luong_hhcc{
+  width: 280px;
+  height: 35px;
+  margin-left: 24px;
+}
+#trong_luong_hh_tab2{
+  background-color: white;
+  width: 222px;
+  height: 35px;
+  margin-left: 22px;
+  border: 2px solid white;
+  line-height: 33px ;
+  padding-left: 82px;
+}
+#tln{
+  background-color: white;
+  width: 278px;
+  height: 35px;
+  margin-left: 68px;
+  border: 2px solid white;
+  line-height: 33px ;
+  padding-left: 82px;
+}
+
+#ngayc{
+    background-color: white;
+    width: 278px;
+    height: 35px;
+    margin-left: 48px;
+    border: 2px solid white;
+    line-height: 35px ;
+    padding-left: 80px;
+}
+#txt{
+    background-color: white;
+    width: 278px;
+    height: 35px;
+    margin-left: 30px;
+    border: 2px solid white;
+    line-height: 35px ;
+    padding-left: 80px;
+}
+#gplx{
+  width: 280px;
+  height: 35px;
+  margin-left: 88px;
+}
+#tlkc{
+    width: 280px;
+    height: 35px;
+    margin-left: 12px;
+}
+#tlhh{
+    width: 280px;
+    height: 35px;
+    margin-left: 82px;
+}
+#vtt{
+
+    background-color: white;
+    width: 280px;
+    height: 35px;
+    margin-left: 94px;
+    border: 2px solid white;
+    line-height: 35px ;
+    padding-left: 80px;
+   
+}
+#tlkc{
+  background-color: white;
+  width: 280px;
+  height: 35px;
+  margin-left: 12px;
+  border: 2px solid white;
+  line-height: 35px ;
+  padding-left: 80px;
+}
+#phan_tram{
+  background-color: white;
+  width: 280px;
+  height: 35px;
+  margin-left: 128px;
+  border: 2px solid white;
+  line-height: 35px ;
+  padding-left: 80px;
+
+}
+#tbbt{
+    background-color: white;
+    width: 278px;
+    height: 35px;
+    margin-left: 35px;  
+    border: 2px solid white;
+    line-height: 35px ;
+    padding-left: 92px;
+}
+.khung-thong-tin-tab2{
+    width:78% ;
+    height: 77%;
+    background-image:linear-gradient(90deg, rgb(115, 199, 32) 0%, rgb(198, 230, 118) 100%);;
+    margin: 20px 10px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(12, 211, 121, 0.7)
+}
+.khung-anh-tab2{
+    height:89% ;
+    width: 22%;
+    background-image:linear-gradient(90deg, rgb(47, 168, 201) 0%, rgba(185, 67, 189, 0.53) 100%);;
+    margin: 20px 0px 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(187, 73, 184, 0.7)
+    
+}
+.function-tab2{
+    height: 68px;
+    width: 100%;
+    background-color: #9dc328;
+    margin: 572px 0 10px;
+    position: relative;
+    background-image:linear-gradient(90deg, rgb(206, 169, 57) 0%, rgb(103, 175, 35) 100%);;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(30, 230, 113, 0.7)
+}
+
+ #snap-tab2 {  
+    position: absolute;
+    left: 230px;
+    background: linear-gradient(to bottom right, #c121be, #566bc1);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0px 42px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top: 4px;
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;
+    
+  }
+  #snap-tab2{
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;
+  }
+  
+  #snap-tab2:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  #snap:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
+  #insert-tab2 {
+    position: absolute;
+    right:230px;
+    background: linear-gradient(to bottom right, #d216a3, #05848f);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0px 42px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top: 9px;
+  }
+  .insert-tab2{
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;   
+  }
+ .insert-tab2:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  } 
+  .insert-tab2:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
+  #calc {  
+    position: absolute;
+    left: 560px;
+    background: linear-gradient(to bottom right, #1ee235, #4614db);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0px 42px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top: 4px;
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;
+    
+  }
+  #calc{
+    text-decoration:none;
+    font-size: 20px;
+    margin-top: 9px;
+  }
+  
+  #calc:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  #calc:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(40, 149, 18, 0.396), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }

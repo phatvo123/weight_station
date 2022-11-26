@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./picture/bg.svg');
+  background-size: cover;
+  animation: move 15s linear alternate infinite;
+}
+
+@keyframes move {
+  50% {
+      background-position: 50%;
+  }
+}
+
+.login-box {
+  width: 400px;
+  height: min-content;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.login-box h2 {
+  font-size: 2.2rem;
+}
+
+.login-box p {
+  color: #404040;
+  margin-top: 4px;
+  font-size: 1.2rem;
+}
+
+form {
+  text-align: left;
+  margin-top: 30px;
+}
+
+form .form-group {
+  margin: 18px 0;
+}
+
+form .form-group label {
+  display: block;
+  font-size: 20px;
+  color: #101010;
+}
+
+form .form-group input {
+  width: 100%;
+  height: 40px;
+  margin-top: 6px;
+  padding: 0 12px 0 34px;
+  border: 2px solid #c4c4c4;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #404040;
+  transition: .3s;
+}
+
+form .form-group input:focus {
+  border-color: #124ce7;
+  box-shadow: 0 0 12px #bbd3ff;
+}
+
+form .form-group input:valid {
+  border-color: #124ce7;
+  background: #e4edff;
+}
+
+form .form-group i {
+  position: absolute;
+  color: #404040;
+  font-size: 20px;
+  transform: translateX(12px) translateY(16px);
+}
+
+form .forgot {
+  cursor: pointer;
+  color: #3784ff;
+  font-size: 18px;
+}
+
+form .forgot:hover {
+  color: #124ce7;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  height: 46px;
+  border-radius: 3px;
+  font-size: 22px;
+  margin-top: 28px;
+  color: #fff;
+  background: linear-gradient(
+      0deg, #124ce7, #3784ff
+  );
+}
+
+#button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 6px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-top: 15px;
+  
+}
+a{
+  text-decoration:none;
+  font-size: 20px;
+}
+
+#button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+#button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+
+}
+.form-group{
+  position: relative;
+  height: 55px;
+  width: 320px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+}
+.form-group input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e44ad;
+  padding-left: 15px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+}
+.form-group input::placeholder{
+  font-size: 17px;
+}
+.form-group span{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #8e44ad;
+  cursor: pointer;
+  display: none;
+}
+.form-group input:valid ~ span{
+  display: block;
+}
+.form-group span i.hide-btn::before{
+  content: "\f070";
+  
+}

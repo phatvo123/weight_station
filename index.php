@@ -1,1 +1,2 @@
-<?php header('Location: /login.html') ; ?>
+<?php
+require_once("login.html");
