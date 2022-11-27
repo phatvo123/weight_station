@@ -14,8 +14,7 @@
   display: flex; /*can giua */
   align-items: center;
   border-radius: 10px 10px 0px 0px ;
-  
-
+  margin: -20px 0 20px;
 }
 #plate_number{
   margin-top: 14px;
@@ -124,14 +123,14 @@ text-align: center;
   background-color: #b6c3be;
   margin-bottom: 60px;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   border-radius: 0px 0px 10px 10px;
     
  }
  
  #select{
     position: absolute;
-    right:428px;
+    right:384px;
     background: linear-gradient(to bottom right, #d216a3, #05848f);
     border: 0;
     border-radius: 12px;
@@ -139,7 +138,7 @@ text-align: center;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 2.5;
     outline: transparent;
@@ -151,7 +150,7 @@ text-align: center;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .print{
     text-decoration:none;
@@ -174,7 +173,7 @@ text-align: center;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 2.5;
     outline: transparent;
@@ -186,7 +185,7 @@ text-align: center;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .print{
     text-decoration:none;

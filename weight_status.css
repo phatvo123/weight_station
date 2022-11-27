@@ -1,100 +1,100 @@
 #tenlx{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 44px;
 }
 #trong_luong_hhcc{
-  width: 280px;
-  height: 35px;
+  width: 220px;
+  height: 30px;
   margin-left: 24px;
 }
 #trong_luong_hh_tab2{
   background-color: white;
-  width: 222px;
-  height: 35px;
-  margin-left: 22px;
+  width: 220px;
+  height: 30px;
+  margin-left: 84px;
   border: 2px solid white;
   line-height: 33px ;
   padding-left: 82px;
 }
 #tln{
   background-color: white;
-  width: 278px;
-  height: 35px;
-  margin-left: 68px;
+  width: 220px;
+  height: 30px;
+  margin-left: 18px;
   border: 2px solid white;
-  line-height: 33px ;
+  line-height: 30px ;
   padding-left: 82px;
 }
 
 #ngayc{
     background-color: white;
-    width: 278px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 48px;
     border: 2px solid white;
-    line-height: 35px ;
-    padding-left: 80px;
+    line-height: 30px ;
+    padding-left: 56px;
 }
 #txt{
     background-color: white;
-    width: 278px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 30px;
     border: 2px solid white;
-    line-height: 35px ;
-    padding-left: 80px;
+    line-height: 30px ;
+    padding-left: 62px;
 }
 #gplx{
-  width: 280px;
-  height: 35px;
-  margin-left: 88px;
+  width: 220px;
+  height: 30px;
+  margin-left: 84px;
 }
 #tlkc{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 12px;
 }
 #tlhh{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 82px;
 }
 #vtt{
 
     background-color: white;
-    width: 280px;
-    height: 35px;
-    margin-left: 94px;
+    width: 220px;
+    height: 30px;
+    margin-left: 42px;
     border: 2px solid white;
-    line-height: 35px ;
+    line-height: 30px ;
     padding-left: 80px;
    
 }
 #tlkc{
   background-color: white;
-  width: 280px;
-  height: 35px;
-  margin-left: 12px;
+  width: 220px;
+  height: 30px;
+  margin-left: 150px;
   border: 2px solid white;
-  line-height: 35px ;
+  line-height: 30px ;
   padding-left: 80px;
 }
 #phan_tram{
   background-color: white;
-  width: 280px;
-  height: 35px;
-  margin-left: 128px;
+  width: 220px;
+  height: 30px;
+  margin-left: 72px;
   border: 2px solid white;
-  line-height: 35px ;
+  line-height: 30px ;
   padding-left: 80px;
 
 }
 #tbbt{
     background-color: white;
-    width: 278px;
-    height: 35px;
-    margin-left: 35px;  
+    width: 220px;
+    height: 30px;
+    margin-left: 168px;  
     border: 2px solid white;
     line-height: 35px ;
     padding-left: 92px;
@@ -129,7 +129,7 @@
 
  #snap-tab2 {  
     position: absolute;
-    left: 230px;
+    left: 180px;
     background: linear-gradient(to bottom right, #c121be, #566bc1);
     border: 0;
     border-radius: 12px;
@@ -158,7 +158,7 @@
   #snap-tab2{
     text-decoration:none;
     font-size: 20px;
-    margin-top: 9px;
+    margin-top: 12px;
   }
   
   #snap-tab2:not([disabled]):focus {
@@ -171,7 +171,7 @@
 
   #insert-tab2 {
     position: absolute;
-    right:230px;
+    right:156px;
     background: linear-gradient(to bottom right, #d216a3, #05848f);
     border: 0;
     border-radius: 12px;
@@ -191,7 +191,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 9px;
+    margin-top: 12px;
   }
   .insert-tab2{
     text-decoration:none;
@@ -207,7 +207,7 @@
 
   #calc {  
     position: absolute;
-    left: 560px;
+    left: 430px;
     background: linear-gradient(to bottom right, #1ee235, #4614db);
     border: 0;
     border-radius: 12px;
@@ -236,7 +236,7 @@
   #calc{
     text-decoration:none;
     font-size: 20px;
-    margin-top: 9px;
+    margin-top: 12px;
   }
   
   #calc:not([disabled]):focus {

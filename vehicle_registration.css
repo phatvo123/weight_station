@@ -10,7 +10,7 @@ body{
     height: 1300px;
 }
 .header_1{
-    height: 144px;
+    height: 132px;
     width: 100%;
     background-image: linear-gradient(0, #09bdc4,#1476bc); 
 
@@ -20,34 +20,34 @@ body{
     color: var(--label-color);
     margin-bottom: 20px;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 22px;
    line-height: 22px;
     display: flex;
 }
 #name_owner{
-    width: 280px;
-    height: 35px;
-    margin-left: 28px;
+    width: 220px;
+    height: 30px;
+    margin-left: 30px;
 }
 #soloai{
-    width: 280px;
-    height: 35px;
-    margin-left: 76px;
+    width: 220px;
+    height: 30px;
+    margin-left: 72px;
 }
 #trucxe{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 38px;
 }
 #name_car{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 28px;
 }
 #plate_number{
   background-color: white;
-    width: 278px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 42px;
     border: 2px solid white;
     line-height: 33px ;
@@ -55,60 +55,63 @@ body{
 }
 #tgsd{
   width: 220px;
-  height: 35px;
-  margin-left: 12px;
+  height: 30px;
+  margin-left: 60px;
+  text-align: center;
 }
 
 #trong_luong_hh{
-    width: 280px;
-    height: 35px;
-    margin-left: 24px;
+    width: 220px;
+    height: 30px;
+    margin-left: 100px;
 }
 #typecar {
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 78px;
+    text-align: center;
   }
   #somay{
-    width: 280px;
-    height: 35px;
-    margin-left: 204px;
+    width: 220px;
+    height: 30px;
+    margin-left: 74px;
   }
   
   #person{
-    width: 280px;
-    height: 35px;
-    margin-left: 8px;
+    width: 220px;
+    height: 30px;
+    margin-left: 54px;
     text-align: center;
   }
   #tlbt{
-    width: 280px;
-    height: 35px;
-    margin-left: 38px;
+    width: 220px;
+    height: 30px;
+    margin-left: 104px;
   }
   #year{
-    width: 280px;
-    height: 35px;
-    margin-left: 136px;
+    width: 220px;
+    height: 30px;
+    margin-left: 16px;
+    text-align: center;
   }
   #weight_before{
-    width: 280px;
-    height: 35px;
-    margin-left: 108px;
+    width: 220px;
+    height: 30px;
+    margin-left: 18px;
   }
   #namecar{
-    width: 280px;
-    height: 35px;
-    margin-left: 178px;
+    width: 220px;
+    height: 30px;
+    margin-left: 50px;
   }
  #cdcs{
-    width: 280px;
-    height: 35px;
-    margin-left: 110px;
+    width: 220px;
+    height: 30px;
+    margin-left: 60px;
   }
   #sokhung{
-    width: 280px;
-    height: 35px;
+    width: 220px;
+    height: 30px;
     margin-left: 52px;
   }
 
@@ -136,7 +139,7 @@ body{
 }
 
 .header-navbar-1{
-    font-size: 25px;
+    font-size: 22px;
     width: 45%;
     text-align: center;
     padding-top: 50px;
@@ -145,7 +148,7 @@ body{
 
 }
 .header-navbar-2{
-    font-size: 25px;
+    font-size: 22px;
     width: 30%;
     text-align: center;
     padding-top: 50px;
@@ -247,9 +250,16 @@ video{
 }
 canvas{
     width: 95%;
-    height: 290px;
-    margin: 15px 9px ;  
+    height: 218px;
+    margin: 30px 9px ;  
 
+}
+.ten{
+  color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4px;
 }
 img{
     width: 95%;
@@ -286,12 +296,12 @@ img{
 }
 .frame-left{
     float: left;
-    margin: 30px 60px;
+    margin: 30px 50px;
 }
 .frame-right{
     float: left;
 
-    margin: 30px 20px 20px 50px;  
+    margin: 30px 50px;  
 }
 .camera{
     color: aquamarine;
@@ -350,11 +360,16 @@ img{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+  #video{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
 
 /* CSS */
 .snap {
     position: absolute;
-    left: 298px;
+    left: 220px;
     background: linear-gradient(to bottom right, #d61337, #e96a1b);
     border: 0;
     border-radius: 12px;
@@ -393,7 +408,7 @@ img{
 
   #insert {
     position: absolute;
-    right:298px;
+    right:198px;
     background: linear-gradient(to bottom right, #cd0e64, #9f26eb);
     border: 0;
     border-radius: 12px;
@@ -413,7 +428,7 @@ img{
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 4px;
+    margin-top: 10px;
 
   }
   .insert{

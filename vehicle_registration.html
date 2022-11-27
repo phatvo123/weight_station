@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vehicle_registration.css">
     <link rel="stylesheet" href="weight_status.css">
-    <link rel="stylesheet" href="information_car.css">
-    <link rel="stylesheet" href="reponsive.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="./front/fontawesome-free-6.1.2-web/css/all.min.css">
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
@@ -75,6 +73,7 @@
                 <div class="webcam1">
 
                     <video id="webcam_real" ></video>
+                    <div class="ten">Picture</div>
                     <canvas id="canvas" ></canvas>
                     
                 </div>
@@ -112,7 +111,7 @@
                         </div>
                         <div class="car">
     
-                            <label class="car " for="input_car" >Niên hạn sử dụng:</label><br>
+                            <label class="car " for="input_car" >Niên hạn:</label><br>
                             <select id="tgsd">                                     
                                     <option>20 năm</option>
                                     <option>24 năm</option>
@@ -133,15 +132,15 @@
                     
                     <div class="frame-right">
                         <div class="car">
-                            <label class="car " for="input_car">Trọng lượng bản thân:</label><br>
+                            <label class="car " for="input_car">TLBT:</label><br>
                             <input id="tlbt" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
-                            <label class="car " for="input_car" >Trọng lượng hàng hoá :</label><br>
+                            <label class="car " for="input_car" >TLHH:</label><br>
                             <input id="trong_luong_hh" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
-                            <label class="car " for="input_car">Số người cho phép chở :</label><br>
+                            <label class="car " for="input_car">Số người :</label><br>
                             <select id="person">                                     
                                 <option>1 </option>
                                 <option>2</option>
@@ -150,7 +149,7 @@
                         </div>
 
                         <div class="car">
-                            <label class="car " for="input_car">Chiều dài cơ sở:</label><br>
+                            <label class="car " for="input_car">Chiều dài:</label><br>
                             <input id="cdcs" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
@@ -175,7 +174,7 @@
                         </div>
                      
                         <div class="car">
-                            <label class="car_1 " for="input_car">Số máy :</label><br>
+                            <label class="car " for="input_car">Số máy :</label><br>
                             <input id="somay" name="input_car" type="text" value=""><br>
                         </div>
                         <div class="car">
