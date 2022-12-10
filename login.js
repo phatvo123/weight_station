@@ -36,6 +36,7 @@ const signIn = () => {
             console.log(result)
         })
         .catch((error) => {
+            alert("Email or password is incorrect")
             console.log(error.code);
             console.log(error.message)
         });

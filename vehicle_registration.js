@@ -44,7 +44,7 @@ const webCamElement = document.getElementById('webcam_real');
     
           }
           var plate_number = document.getElementById('plate_number');
-          var dbRef = firebase.database().ref().child('hihi');
+          var dbRef = firebase.database().ref().child('bienso');
   
           dbRef.on('value', snap => plate_number.innerText = snap.val());
           //------------------- insert
