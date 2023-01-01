@@ -56,11 +56,11 @@ const webCamElement = document.getElementById('webcam_real');
                 contentType: 'image/jpeg'
             })
             const picture_url = await task.ref.getDownloadURL()
-            firebase.database().ref('Thong_tin_xe/'+bsx).on('value',function(snapshot){
+            firebase.database().ref('Thong_tin_xe/'+sk).on('value',function(snapshot){
 
             });
 
-            firebase.database().ref('Thong_tin_xe/'+bsx).set({
+            firebase.database().ref('Thong_tin_xe/'+sk).set({
              Anh:picture_url,
              Bien_so_xe:bsx,
             Niên_hạn : tgsd,

@@ -11,13 +11,13 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
   function Ready(){
-    bsx = document.getElementById('plate_number').value;
+    so_khung = document.getElementById('khung_xe').value;
   }
 
 
   document.getElementById("select").onclick = function(){
     Ready();
-    firebase.database().ref('Thong_tin_xe/'+bsx).on('value',function(snapshot){
+    firebase.database().ref('Thong_tin_xe/'+so_khung).on('value',function(snapshot){
         document.getElementById('bsx').value=snapshot.val().Bien_so_xe;
         document.getElementById('lx').value=snapshot.val().Loai_xe;
         document.getElementById('chu_xe').value=snapshot.val().Ten_chu_xe;

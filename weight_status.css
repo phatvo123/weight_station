@@ -12,7 +12,7 @@
   background-color: white;
   width: 220px;
   height: 30px;
-  margin-left: 84px;
+  margin-left: 156px;
   border: 2px solid white;
   line-height: 33px ;
   padding-left: 82px;
@@ -89,6 +89,16 @@
   line-height: 30px ;
   padding-left: 80px;
 
+}
+#khung_xe{
+  background-color: white;
+    width: 220px;
+    height: 30px;
+    margin-left: 22px;
+    border: 2px solid white;
+    line-height: 33px ;
+    padding-left: 82px;
+  
 }
 #tbbt{
     background-color: white;
@@ -236,7 +246,8 @@
   #calc{
     text-decoration:none;
     font-size: 20px;
-    margin-top: 12px;
+    margin: 12px 130px;
+   
   }
   
   #calc:not([disabled]):focus {

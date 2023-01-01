@@ -14,7 +14,7 @@
   display: flex; /*can giua */
   align-items: center;
   border-radius: 10px 10px 0px 0px ;
-  margin: -20px 0 20px;
+  margin: -20px 0 0px;
 }
 #plate_number{
   margin-top: 14px;
@@ -125,6 +125,7 @@ text-align: center;
   text-align: center;
   font-size: 22px;
   border-radius: 0px 0px 10px 10px;
+ padding-top: 16px;
     
  }
  
@@ -150,7 +151,7 @@ text-align: center;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 10px;
+    margin-top: -8px;
   }
   .print{
     text-decoration:none;
@@ -185,7 +186,7 @@ text-align: center;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    margin-top: 10px;
+    margin-top: -8px;
   }
   .print{
     text-decoration:none;

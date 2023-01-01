@@ -10,13 +10,6 @@ function takeAPicture(){
    
 }   
 
-    
-
-//     var number = document.getElementById('input_car').value
-//     var number_1 = document.getElementById('plate_number').value
-//    var a = number_1 - number;
-//    // alert(a)
-//    document.getElementById('result').value = a;
 
 const firebaseConfig = {
   apiKey: "AIzaSyAT9Jm0ObdHVUhjYTbUXFTraRukK3cQyPg",
@@ -55,6 +48,7 @@ var  a,bsx, tenlx, ngay,gio,tlbt,tlkc,tlhh,vtt,trong_luong_hh_tab2;
 function Ready(){
 
   bsx = document.getElementById('plate_number').value;
+  khung = document.getElementById('khung_xe').value;
   tenlx = document.getElementById('tenlx').value;
   gplx = document.getElementById('gplx').value;
   ngay = document.getElementById('ngayc').value;
@@ -62,7 +56,6 @@ function Ready(){
   trong_luong_hh= document.getElementById('trong_luong_hh_tab2').value;
   tlbt = document.getElementById('tbbt').value;
   tlkc = document.getElementById('tlkc').value;
-  trong_luong_nguoi = document.getElementById('tln').value;
   vtt = document.getElementById('vtt').value;
   phan_tram = document.getElementById('phan_tram').value;
 
@@ -73,30 +66,35 @@ function Ready(){
   var dbRef = firebase.database().ref().child('kl');
   dbRef.on('value', snap => tlkc.innerText = snap.val());
 
-  var plate_number = document.getElementById('plate_number');
-  var dbRef = firebase.database().ref().child('bienso');
-  dbRef.on('value', snap => plate_number.innerText = snap.val());
+ 
 
 //------------------- insert
 document.getElementById("calc").onclick = function(){
   Ready();
-  firebase.database().ref('Thong_tin_xe/'+bsx).on('value',function(snapshot){
+  firebase.database().ref('Thong_tin_xe/'+khung).on('value',function(snapshot){
 
       document.getElementById('tbbt').value=snapshot.val().Trong_luong_ban_than;
       document.getElementById('trong_luong_hh_tab2').value=snapshot.val().Trong_luong_hang_hoa;
-      var so_luong =snapshot.val().So_luong_nguoi;
-      var kl_nguoi = so_luong*1000;
-      document.getElementById('tln').value=kl_nguoi;
+      document.getElementById('plate_number').value=snapshot.val().Bien_so_xe;
       var trong_luong_hh = document.getElementById('trong_luong_hh_tab2').value
       var trong_luong_bt = document.getElementById('tbbt').value
       var trong_luong_can = document.getElementById('tlkc').value
-      var trong_luong_nguoi= document.getElementById('tln').value
+      var bien_so_xe= document.getElementById('plate_number').value
   
-      var kq = (trong_luong_can-trong_luong_hh-trong_luong_nguoi-trong_luong_bt)
-      var phan_tram = (kq/(trong_luong_hh*100))*10000
-      document.getElementById('vtt').value =kq;  
+      var kl = (trong_luong_can-trong_luong_hh-trong_luong_bt)
+      var kq = kl.toFixed(2);
+      var n = (kq/(trong_luong_hh*100))*10000
+      var phan_tram = n.toFixed(2);
+      var khong = 0;
+      if (phan_tram < 0){
+        document.getElementById('phan_tram').value =khong;
+      }
+     else{
       document.getElementById('phan_tram').value =phan_tram;
-
+     }
+      document.getElementById('vtt').value =kq;  
+      document.getElementById('bsx').value =bien_so_xe;  
+      
   });
   
 
@@ -121,7 +119,6 @@ document.getElementById('insert-tab2').onclick = async () => {
    Trong_luong_hang_hoa:trong_luong_hh, 
    Trong_luong_ban_than:tlbt,
    Trong_luong_khi_can:tlkc,
-   Trong_luong_nguoi:tln,
    Xe_vuot_tai_trong:vtt,
    Phan_tram_vtt:phan_tram
 
@@ -140,7 +137,6 @@ document.getElementById('insert-tab2').onclick = async () => {
     Trong_luong_hang_hoa:trong_luong_hh, 
     Trong_luong_ban_than:tlbt,
     Trong_luong_khi_can:tlkc,
-    Trong_luong_nguoi:tln,
     Xe_vuot_tai_trong:vtt,
     Phan_tram_vtt:phan_tram
   })
