@@ -18,7 +18,7 @@ function SelectAllData(){
             function(CurrentRecord){
                 var bx = CurrentRecord.val().Bien_so_xe;
                 var lx = CurrentRecord.val().Ten_lai_xe;
-                var gplx = CurrentRecord.val().Ten_lai_xe;
+                var gplx = CurrentRecord.val().GPLX;
                 var gv = CurrentRecord.val().Gio_vao;
                 var nc = CurrentRecord.val().Ngay_can;
                 var tlbt = CurrentRecord.val().Trong_luong_ban_than;
